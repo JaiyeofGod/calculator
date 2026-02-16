@@ -44,7 +44,7 @@ while (true) {
     }
 }
 document.write("</table>");
-document.write("<h2 style align='center'>Summary</h2>");
+document.write("<h2 style align='center'>Result's Summary</h2>");
 document.write("<table align='center' border='1' cellpadding='10'>");
 document.write("<tr><th>Minimum</th><th>Maximum</th><th>Average</th><th>Total</th></tr>");
 
