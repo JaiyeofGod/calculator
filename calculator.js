@@ -1,7 +1,7 @@
 let results = [];
 
-// Table header
-document.write("<table border='1' cellpadding='10'>");
+// this is the table header
+document.write("<table align='center' border='1' cellpadding='10'>");
 document.write("<tr><th>Number 1</th><th>Operator</th><th>Number 2</th><th>Result</th></tr>");
 
 while (true) {
@@ -16,7 +16,7 @@ while (true) {
 
     let result;
 
-    // Check if numbers are valid
+    // this will check if numbers are valid
     if (isNaN(x) || isNaN(y)) {
         result = "Wrong input this is not a number";
     } else {
@@ -31,7 +31,6 @@ while (true) {
         else result = "Invalid entry has been made";
     }
 
-    // Add row to table
     document.write("<tr>");
     document.write("<td>" + x + "</td>");
     document.write("<td>" + op + "</td>");
@@ -39,14 +38,14 @@ while (true) {
     document.write("<td>" + result + "</td>");
     document.write("</tr>");
 
-    // Save valid numeric results
+    
     if (typeof result === "number") {
         results.push(result);
     }
 }
 document.write("</table>");
-document.write("<h2>Summary</h2>");
-document.write("<table border='1' cellpadding='10'>");
+document.write("<h2 style align='center'>Summary</h2>");
+document.write("<table align='center' border='1' cellpadding='10'>");
 document.write("<tr><th>Minimum</th><th>Maximum</th><th>Average</th><th>Total</th></tr>");
 
 if (results.length > 0) {
